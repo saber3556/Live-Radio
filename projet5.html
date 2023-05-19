@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+       <style>
+           
+         
+           main{
+               width: 360px;
+       
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+           }
+           header{
+               text-align: center;
+               color: wheat;
+               height: 300px;
+           }
+           header img{
+               margin-top: 20px;
+               height: 140px;
+           }
+           header h2{
+               margin:20px 0 ;
+               font-size: 35px;
+           }
+           #content{
+               background-color:white;
+               height: 450px;
+           }
+           header p{
+               font-size: 22px;
+           }
+           #buttons{
+               display: flex;
+               justify-content: center;
+               padding-top: 20px;
+               cursor: pointer;
+           }
+           #buttons img{
+width: 45px;
+margin: 0 15px;
+height: 45px;
+           }
+           #volume{
+               text-align: center;
+           }
+           #volume input{
+               width: 90%;
+           }
+           input[type="range" i]{
+               -webkit-appearance: none;
+               background: #e6e7e8;
+               height: 5px;
+               margin: 0%;
+           }
+           h2{
+               margin: 15px 0;
+           }
+           #color{
+               text-align: center;
+               margin-top: 40px;
+               position: absolute;
+               padding: 5px;
+               margin-left: 79px;
+           }
+
+           #color button{
+            width: 25px;
+            height: 25px;
+            text-indent: -9999px;
+            margin: 5px; 
+            border: 2px solid black;
+            border-radius: 7px;  
+           }
+           #color1{
+               background: linear-gradient(to right, #a1ffce, #faffd1);
+           }
+           #color2{
+               background: linear-gradient(to right, #ef32d9, #89fffd);
+           }
+           #color3{
+               background: linear-gradient(to right, #00c3ff, #ffff1c);
+           }
+           #color4{
+               background: linear-gradient(to right, #00f260, #0575e6);
+           }
+           #color5{
+               background: linear-gradient(to right, #fc466b, #3f5efb);
+           }
+       </style>
+    </head>
+    <body>
+<main id="player">
+<header>
+    <img style="cursor: pointer;" src="gfr.gif">
+    <h2 style="cursor: pointer;">LIVE RADIO</h2>
+    <p id="titleradio">Radio 1</p>
+</header>
+<div id="content">
+<article id="buttons">
+    <img src="back.jpg" id="back">
+    <img src="down.png" id="playpuase">
+    <img src="next.jpg" id="next">
+  <audio src="top.mp4" id="audiofile"></audio>  
+</article>
+<article id="volume">
+    <h2 style="cursor: pointer;">Son</h2>
+    <input style="cursor: pointer;" type="range" id="volumerang">
+    <h2 style="cursor: pointer;">Speed</h2>
+    <input style="cursor: pointer;" type="range" id="volumespeed" max="200" min="0">
+</article>
+<article id="color">
+    <button style="cursor: pointer;" id="color1"></button>
+    <button style="cursor: pointer;" id="color2"></button>
+    <button style="cursor: pointer;" id="color3"></button>
+    <button style="cursor: pointer;" id="color4"></button>
+    <button style="cursor: pointer;" id="color5"></button>
+</article>
+</div>
+
+</main>
+
+<script src="projet5js.js"></script>
+    </body>
+</html>
